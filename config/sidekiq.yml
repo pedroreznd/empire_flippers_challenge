@@ -1,0 +1,8 @@
+:concurrency: 5
+
+:scheduler:
+  :schedule:
+    daily_listing_sync_job:
+      cron: "0 8 * * *"
+      class: "DailyListingSyncJob"
+      queue: default
