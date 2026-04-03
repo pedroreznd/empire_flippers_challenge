@@ -34,7 +34,7 @@ The app is designed around a daily sync flow:
 1. Clone the repository:
 
    ```bash
-   git clone <repo-url>
+   git clone https://github.com/pedroreznd/empire_flippers_challenge.git
    cd empire_flippers_challenge
    ```
 
@@ -109,15 +109,6 @@ The scheduled job is configured to run once per day at `08:00`.
 bundle exec rspec
 ```
 
-## Assumptions & Notes
 
-- Only listings with status `For Sale` are synced to HubSpot.
-- Duplicate prevention is handled in two steps:
-  first by skipping listings that already have `hubspot_deal_id`, and then by searching HubSpot for an existing deal named `Listing <listing_number>`.
-- HubSpot integration uses a private app access token via the `hubspot-api-client` gem.
-- Daily scheduling is handled with Sidekiq and `sidekiq-scheduler` through `DailyListingSyncJob`.
-
-## Submission Notes
-
-- Invite `beng+test@empireflippers.com` to the HubSpot account used for testing.
-- Submit the repository link as part of the coding challenge delivery.
+<br/>
+Built with the assistance of OpenAI Codex CLI and ChatGPT (GPT-5.3 Codex).
