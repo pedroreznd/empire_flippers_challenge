@@ -73,7 +73,7 @@ RSpec.describe Hubspot::DealSyncService, type: :service do
 
     it "stores an existing HubSpot id when search finds a matching deal" do
       allow(search_api).to receive(:do_search).and_return(
-        double("Hubspot search results", results: [double("Hubspot deal", id: "existing-deal-id")])
+        double("Hubspot search results", results: [ double("Hubspot deal", id: "existing-deal-id") ])
       )
 
       service.call

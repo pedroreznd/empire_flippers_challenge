@@ -50,15 +50,15 @@ group :development do
   gem "web-console"
 end
 
-gem 'httparty'
-gem 'sidekiq'
-gem 'sidekiq-scheduler'
-gem 'hubspot-api-client'
+gem "httparty"
+gem "sidekiq"
+gem "sidekiq-scheduler"
+gem "hubspot-api-client"
 
 group :development, :test do
-  gem 'rspec-rails'
-  gem 'factory_bot_rails'
-  gem 'faker'
-  gem 'webmock'
-  gem 'dotenv-rails'
+  gem "rspec-rails"
+  gem "factory_bot_rails"
+  gem "faker"
+  gem "webmock"
+  gem "dotenv-rails"
 end
